@@ -100,6 +100,7 @@ function ensureOriginOnExports(moduleExports, moduleId) {
     var target = moduleExports;
     var key;
     var exportedValue;
+    Origin.set(target, new Origin(moduleId, ''));
     if (typeof target === 'object') {
         for (key in target) {
             exportedValue = target[key];

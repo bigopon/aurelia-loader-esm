@@ -98,6 +98,7 @@ define('aurelia-loader-esm', ['require', 'exports', 'aurelia-metadata', 'aurelia
         var target = moduleExports;
         var key;
         var exportedValue;
+        aureliaMetadata.Origin.set(target, new aureliaMetadata.Origin(moduleId, ''));
         if (typeof target === 'object') {
             for (key in target) {
                 exportedValue = target[key];

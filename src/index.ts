@@ -25,6 +25,8 @@ export function ensureOriginOnExports(moduleExports: Record<string, any>, module
   let key;
   let exportedValue;
 
+  Origin.set(target as any, new Origin(moduleId, ''));
+
   if (typeof target === 'object') {
     for (key in target) {
       exportedValue = target[key];
