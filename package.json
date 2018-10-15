@@ -1,5 +1,6 @@
 {
   "name": "aurelia-loader-esm",
+  "version": "0.1.0",
   "main": "dist/commonjs/index.js",
   "module": "dist/es2015/index.js",
   "types": "dist/types/index.d.ts",
